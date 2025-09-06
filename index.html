@@ -7,7 +7,7 @@
 <style>
 body {
   background: #fff;
-  font-family: "Courier New", monospace;
+  font-family: "Lucida Console", monospace;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,8 @@ body {
 
 .window {
   background: #f9f0e9;
-  border: 3px solid #000;
-  box-shadow: 6px 6px 0px #a2c6c8;
+  border: 3px solid #737373;
+  box-shadow: 6px 6px 0px #c8c8c8;
   width: 420px;
   display: flex;
   flex-direction: column;
@@ -26,8 +26,8 @@ body {
 }
 
 .titlebar {
-  background: #b8e1e4;
-  color: #333;
+  background: #bfb3a9;
+  color: #fff;
   padding: 5px 10px;
   display: flex;
   justify-content: space-between;
@@ -179,13 +179,13 @@ input[type="range"]::-moz-range-thumb {
   overflow-y: auto;
   border: 2px solid #000;
   background: #f9f0e9;
-  box-shadow: 6px 6px 0px #a2c6c8;
+  box-shadow: 6px 6px 0px #c8c8c8;
   z-index: 100;
 }
 
 .playlist-popup .titlebar {
-  background: #b8e1e4;
-  color: #333;
+  background: #bfb3a9;
+  color: #fff;
   padding: 4px 10px;
   font-size: 13px;
   cursor: move;
@@ -230,8 +230,8 @@ input[type="range"]::-moz-range-thumb {
     <button id="playBtn">▶</button>
     <button id="nextBtn">⏭</button>
     <button id="videoBtn">📺</button>
-    <button id="shuffleBtn">🔀</button>
-    <button id="repeatBtn">🔁</button>
+    <button id="shuffleBtn">⇄</button>
+    <button id="repeatBtn">↻</button>
     <button id="playlistToggle">🎶</button>
   </div>
 
@@ -254,7 +254,7 @@ input[type="range"]::-moz-range-thumb {
   </div>
 
   <div class="volume-container">
-    <label for="volume">🔊</label>
+    <label for="volume">Volume: ▁▂▃▄▅▆▇ </label>
     <input type="range" id="volume" min="0" max="1" step="0.01" value="1">
   </div>
 
@@ -292,6 +292,18 @@ const bars = document.querySelectorAll('.bar');
 const tracks = [
   { name: "☆Start!☆", url: "https://studyplaylist.s3.us-east-2.amazonaws.com/Nintendo+DSi+Startup+(HD+version).mp3", cover: "https://github.com/izabellatkd/Study-MP3/blob/main/nintendo.gif?raw=true" },
   { name: "☆Upbeat☆", url: "https://studyplaylist.s3.us-east-2.amazonaws.com/Nintendo+upbeat+%26+chill+video+game+music+for+locking+in.mp3", cover: "https://github.com/izabellatkd/Study-MP3/blob/main/kirby.gif?raw=true" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
+  { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
   { name: "Late Night Pool", url: "music/song3.mp3", cover: "covers/cover3.jpg" },
   { name: "Neon Nights", url: "music/song4.mp3", cover: "covers/cover4.jpg" }
 ];
